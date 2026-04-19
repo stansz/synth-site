@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>jsfxr - 8 bit sound maker and online sfx generator</title>
-<meta name="description" content="A simple online 8 bit sound maker and sfx generator. You can also use it as a sound library in your JavaScript games.">
+<title>OGS Synth - Sound Effects Generator</title>
+<meta name="description" content="OGS Apps sound effects generator. Create retro game sounds in your browser.">
 
 <meta charset="utf-8" >
 <meta name="viewport" content="width=device-width, initial-scale=0.95">
@@ -357,6 +357,8 @@ body {
     margin-right: auto;
     max-width: 800px;
     width: 98%;
+    background: #0a1628;
+    color: #c0c8e0;
 }
 
 h1 {
@@ -364,12 +366,14 @@ h1 {
     padding-right: 1em;
     padding-top: 0;
     margin-top: 0;
+    color: #e8ecf4;
 }
 
 h2 {
     font-size: 12pt;
     text-align: center;
     font-weight: 400;
+    color: #8890a8;
 }
 
 header {
@@ -385,7 +389,7 @@ header img {
 
 a {
     text-decoration: none;
-    color: #00f;
+    color: #3b82f6;
 }
 
 #sound_vol,
@@ -436,7 +440,7 @@ button {
 
 fieldset {
     border-style: solid none none;
-    border-color: #ccc;
+    border-color: #2a2d40;
     border-width: 1px;
     margin-bottom: 1rem;
     padding-left: 0;
@@ -538,7 +542,8 @@ th {
 
 #waveform {
     border-radius: 0.4rem;
-    border: 1px solid #5b5b5b;
+    border: 1px solid #2a2d40;
+    background: #1a1d2e;
 }
 
 main {
@@ -567,10 +572,10 @@ button {
 
 .buttonset label,
 button {
-    border: 1px solid #666;
-    background: linear-gradient(to bottom, #626262 50%, #555 50%, #686868);
+    border: 1px solid #2a2d40;
+    background: linear-gradient(to bottom, #1e2238 50%, #1a1d2e 50%, #1e2238);
     line-height: 1.4em;
-    color: #eee;
+    color: #c0c8e0;
     cursor: pointer;
     padding: 0.4em;
     text-align: center;
@@ -578,20 +583,21 @@ button {
 
 .buttonset label:hover,
 button:hover {
-    background: linear-gradient(to bottom, #288db1 50%, #0078a3 50%, #3a96b8);
-    border-color: #59b4d4;
+    background: linear-gradient(to bottom, #3b82f6 50%, #2563eb 50%, #3b82f6);
+    border-color: #3b82f6;
+    color: #fff;
 }
 
 button.play-button {
-    background: linear-gradient(to bottom, #45973c 50%, #3a833c 50%, #45973c);
-    border-color: #3a833c;
+    background: linear-gradient(to bottom, #22c55e 50%, #16a34a 50%, #22c55e);
+    border-color: #16a34a;
     color: #ffffff;
     font-weight: bold;
 }
 
 button.play-button:hover {
-    background: linear-gradient(to bottom, #52a847 50%, #45973c 50%, #52a847);
-    border-color: #52a847;
+    background: linear-gradient(to bottom, #4ade80 50%, #22c55e 50%, #4ade80);
+    border-color: #4ade80;
 }
 
 .buttonset label:first-of-type {
@@ -604,8 +610,9 @@ button.play-button:hover {
 
 .button,
 .buttonset input:checked+label {
-    background-image: linear-gradient(to bottom, #f58400, #f6982b);
-    border-color: #ffaf0f;
+    background-image: linear-gradient(to bottom, #f59e0b, #fbbf24);
+    border-color: #f59e0b;
+    color: #0a1628;
 }
 
 input[type="range"] {
@@ -613,8 +620,8 @@ input[type="range"] {
 }
 
 input[type="range"]::-moz-range-thumb {
-    border: 1px solid #f58400;
-    background: linear-gradient(to bottom, #626262 50%, #555 50%, #686868);
+    border: 1px solid #f59e0b;
+    background: linear-gradient(to bottom, #1e2238 50%, #1a1d2e 50%, #1e2238);
     border-radius: 6px;
     width: 1.35em;
     height: 1.35em;
@@ -622,7 +629,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-    border: 1px solid #f58400;
+    border: 1px solid #f59e0b;
     background: linear-gradient(to bottom, #626262 50%, #555 50%, #686868);
     border-radius: 6px;
     width: 1.35em;
@@ -671,7 +678,8 @@ input[type="range"]:disabled::-webkit-slider-runnable-track {
 <body>
 
   <header>
-    <img src="logo.svg" alt="jsfxr" title="jsfxr" />
+    <h1 style="font-size:18pt;margin:0;">🔊 OGS Synth</h1>
+    <a href="https://ogsapps.cc" style="font-size:0.8rem;color:#8890a8;">← OGS Apps</a>
   </header>
 
     <main>
