@@ -458,6 +458,8 @@ fieldset>div {
     display: flex;
     align-items: baseline;
     line-height: 0.95em;
+    margin-bottom: 0.5rem;
+    gap: 0.5rem;
 }
 
 fieldset output {
@@ -473,8 +475,8 @@ label+output {
 }
 
 .demo .slider {
-    width: 120px;
-    margin: 0 15px 0 0;
+    width: 100%;
+    margin: 0;
     transform: translate(0, 2px);
 }
 
@@ -848,27 +850,9 @@ input[type="range"]:disabled::-webkit-slider-runnable-track {
         </div>
     </div>
 
-    <div id="links">
-        <h1>about jsfxr</h1>
-        <p>Jsfxr is an online 8 bit sound maker and sfx generator. All you need to make retro sound effects with jsfxr
-            is a
-            web browser. It's a JavaScript port of the original <a href="http://www.drpetter.se/project_sfxr.html"
-                id="original">sfxr</a> by DrPetter. You can also use it as a <a
-                href='https://github.com/chr15m/jsfxr#use'>JavaScript library</a> for playing and rendering sfxr sound
-            effects
-            in your games.</p>
-        <br />
-        (Port of <a href="http://www.drpetter.se/project_sfxr.html" id="original">sfxr</a> by DrPetter)<br />
-        <a id="uncopy" href="UNLICENSE">¢</a> 2011
-        <a href="http://fredricksen.net/">Eric Fredricksen</a><br />
-        With <a href='https://github.com/chr15m/jsfxr'>contributions</a> from Chris McCormick<br />
-        <br />
-        <a href="https://github.com/chr15m/jsfxr" id="source">(Source code)</a>
-        <br />
-        <p><a href='https://github.com/chr15m/jsfxr#use'>See the documentation for using these sounds in your JavaScript
-                game</a>.</p>
-        <p>Tip: use the <code>sfxr-to-wav</code> nodejs script to convert to a wave file on the command line.</p>
-    </div>
+    <footer style="text-align:center;margin:2em 0;padding:1em 0;border-top:1px solid #2a2d40;">
+      <p style="font-size:0.75rem;color:#4a5070;">Based on <a href="https://github.com/chr15m/jsfxr" style="color:#3b82f6;">jsfxr</a> by Eric Fredricksen & Chris McCormick · Port of <a href="http://www.drpetter.se/project_sfxr.html" style="color:#3b82f6;">sfxr</a> by DrPetter</p>
+    </footer>
 
 </body>
 </html>
